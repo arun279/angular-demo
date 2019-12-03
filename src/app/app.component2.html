@@ -1,0 +1,11 @@
+<!-- component handling -->
+<h3 [ngClass]="color">{{name}}</h3>
+<p><b>selected color:</b>&nbsp;<i [ngClass]="color">{{color}}</i></p>
+
+<!-- event handling -->
+<button type="button" (click)="handleButtonClick()">Change Greeting</button>
+<br/>
+<button type="button" class="red" (click)="changeColor('red')">Red</button>
+<button type="button" class="green" (click)="changeColor('green')">Green</button>
+<button type="button" class="blue" (click)="changeColor('blue')">Blue</button>
+<button type="button" class="black" (click)="changeColor('black')">Black</button>
